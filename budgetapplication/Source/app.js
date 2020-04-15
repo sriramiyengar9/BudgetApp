@@ -296,7 +296,7 @@ var UIController = (function () {
 
             now = new Date();
 
-            date = getCurrentMonthName(now.getMonth()) + ' - ' + now.getFullYear();
+            date = getCurrentMonthName(now.getMonth()) + ' ' + now.getFullYear();
 
             document.querySelector(DOMstrings.dateLabel).textContent = date;
 
@@ -421,7 +421,7 @@ var controller = (function (budgetCtrl, UICtrl) {
 
     };
 
-    return { 
+    return {
         init: function () {
             console.log('App has started');
 
